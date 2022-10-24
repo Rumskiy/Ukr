@@ -1,0 +1,21 @@
+.container {
+    /* max-width: 1140px; */
+    max-width: $container-width-xl;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $padding-container;
+}
+
+@media sceen and (max-windth: 960px) {
+    .container{
+        max-width: $container-width-x2;
+        padding: 0 $padding-container;
+    }
+}
+a, p, h1, h2, h3, h4, h5, h6{
+    font-family: $font-family;
+}
+
+body{
+    background-color: #F6F6F6;
+}

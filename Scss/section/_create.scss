@@ -1,0 +1,45 @@
+.create{
+    background-color: $white-color;
+    &__wrapper{
+        @include flex-row;
+        padding: 80px 0;
+        gap: 120px;
+
+        // Adaptive include
+        @include Small-1000-PcScreen {
+            @include flex-colum;
+            gap: 30px;
+        }
+    }
+    &__items{
+        @include flex-colum;
+        gap: 10px;
+        &-h2{
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 52px;
+        }
+    }
+    &__detals{
+        @include flex-colum;
+        gap: 20px;
+        
+        &-p{
+            max-width: 540px
+        }
+        &-main{
+            @include flex-row;
+            align-items: center;
+            gap: 20px;
+            @include Small-1000-PcScreen{
+                @include flex-colum;
+            }
+            &-h2{
+                font-size: 54px;
+                line-height: 70px;
+                font-weight: 600;
+                color: $primarry-color-500;
+            }
+        }
+    }
+}
